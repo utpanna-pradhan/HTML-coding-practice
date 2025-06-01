@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <p style="font-size: 24px;color: red; text-align: center;">
+            Q). Make a text input read-only.
+        </p>
+        <!-- -can't modify
+        -prevent user from interacting with the field
+        -user can only copy text
+        - true - The text field is read-only
+        -false - Default. The text field is changeable -->
+        <p>Readonly</p>
+        <input type="text" id="mytxt" placeholder="Enter readonly text"
+            name="name">
+        <button onclick="readonlyfun()">click to for readonly content</button>
+        <script>
+            function readonlyfun(){
+                 document.getElementById("mytxt").readOnly=true;
+            }
+           
+        </script>
+    </body>
+</html>
