@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .nav_ul{
+              display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+           
+        }
+        .nav_ul li{
+            list-style-type: none;
+             padding: 10px 25px;
+          
+        }
+        .nav_ul li a{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+        .home{
+            background-color: lightgray;
+            width: 100vw;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            align-items: center;
+        }
+        .about h1{
+            text-align: center;
+        }
+        .child_about{
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            align-items: center;
+        }
+        .about_box{
+            padding: 8px;
+            border-radius: 12px;
+            border: 1pa solid lightgray;
+            background-color: lightgray;
+            margin: 5px;
+            line-height: 1.8rem;
+        }
+        .blog_single_Card{
+            height: 300px;
+            background-color: lightcyan;
+            margin: 10px;
+            border-radius: 13px;
+            padding: 10px;
+        }
+        .blog_Card{
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+        }
+        .blog_ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .blog_ul li{
+           list-style-type: none;
+            margin: 10px;
+           
+        }
+         .blog_ul li button{
+             padding: 8px 20px;
+            border-radius: 12px;
+            border: 1px solid transparent;
+            cursor: pointer;
+         }
+         .contact{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            background-color: rgb(233, 228, 229);
+          
+            width: 50%;
+            margin: auto;
+            border-radius: 15px;
+         }
+    </style>
+    </head>
+    <body>
+        <p style="font-size: 24px;color: red; text-align: center;">
+            Q).Create a navigation menu using links.
+        </p>
+        <nav>
+            <ul class="nav_ul">
+                <li> <a href="#home">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div id="home" class="home">
+                <h1> Welcome to the Website</h1>
+                <p>Want to know more about this Website</p>
+                <br>
+                click on<br><br> <a href="#about"><button>about</button></a>
+            </div>
+            <div id="about" class="about">
+                <h1> About this Website</h1>
+                <div class="child_about">
+                    <div class="about_box"><p>Lorem ipsum dolor, sit amet
+                            consectetur adipisicing elit. Rem, saepe odio?
+                            Accusamus commodi, inventore obcaecati, eum deleniti
+                            saepe pariatur quidem soluta facere consequatur,
+                            quia quam adipisci aliquid rem voluptas
+                            sequi!</p></div>
+                    <div class="about_box"><p>Lorem ipsum dolor, sit amet
+                            consectetur adipisicing elit. Rem, saepe odio?
+                            Accusamus commodi, inventore obcaecati, eum deleniti
+                            saepe pariatur quidem soluta facere consequatur,
+                            quia quam adipisci aliquid rem voluptas
+                            sequi!</p></div>
+                    <div class="about_box"><p>Lorem ipsum dolor, sit amet
+                            consectetur adipisicing elit. Rem, saepe odio?
+                            Accusamus commodi, inventore obcaecati, eum deleniti
+                            saepe pariatur quidem soluta facere consequatur,
+                            quia quam adipisci aliquid rem voluptas
+                            sequi!</p></div>
+                </div>
+                <div class="child_about">
+                    <div class="about_box"><p>Lorem ipsum dolor, sit amet
+                            consectetur adipisicing elit. Rem, saepe odio?
+                            Accusamus commodi, inventore obcaecati, eum deleniti
+                            saepe pariatur quidem soluta facere consequatur,
+                            quia quam adipisci aliquid rem voluptas
+                            sequi!</p></div>
+                    <div class="about_box"><p>Lorem ipsum dolor, sit amet
+                            consectetur adipisicing elit. Rem, saepe odio?
+                            Accusamus commodi, inventore obcaecati, eum deleniti
+                            saepe pariatur quidem soluta facere consequatur,
+                            quia quam adipisci aliquid rem voluptas
+                            sequi!</p></div><div class="about_box"><p>Lorem
+                            ipsum dolor, sit amet consectetur adipisicing elit.
+                            Rem, saepe odio? Accusamus commodi, inventore
+                            obcaecati, eum deleniti saepe pariatur quidem soluta
+                            facere consequatur, quia quam adipisci aliquid rem
+                            voluptas sequi!</p></div>
+                </div>
+
+            </div>
+
+            <div class="blog" id="blog">
+                <h1>Blog Section</h1>
+                <ul class="blog_ul">
+                    <li>
+                        <a href="#study">
+                            <button>study</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Job">
+                            <button>Job</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Internship">
+                            <button>Internship</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Motivational">
+                            <button>Motivational</button>
+                        </a>
+                    </li>
+                </ul>
+                <div class="blog_Card">
+                    <div class="blog_single_Card" id="#study">
+                        <h4>Tech jobs</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Tempora quos laudantium sed consectetur eius
+                            iste, vero nesciunt asperiores maxime minus,
+                            repellat incidunt! At ullam deleniti aliquam
+                            repellat placeat quo non!</p>
+                        <button>Know more</button>
+                    </div>
+                    <div class="blog_single_Card">
+                        <h4>Tech jobs</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Tempora quos laudantium sed consectetur eius
+                            iste, vero nesciunt asperiores maxime minus,
+                            repellat incidunt! At ullam deleniti aliquam
+                            repellat placeat quo non!</p>
+                        <button>Know more</button>
+                    </div>
+                    <div class="blog_single_Card" id="#study">
+                        <h4>HTML Tutorials</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Tempora quos laudantium sed consectetur eius
+                            iste, vero nesciunt asperiores maxime minus,
+                            repellat incidunt! At ullam deleniti aliquam
+                            repellat placeat quo non!</p>
+                        <button>Know more</button>
+                    </div>
+
+                    <div class="blog_single_Card" id="#Motivational">
+                        <h4>How to get motivated</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Tempora quos laudantium sed consectetur eius
+                            iste, vero nesciunt asperiores maxime minus,
+                            repellat incidunt! At ullam deleniti aliquam
+                            repellat placeat quo non!</p>
+                        <button>Know more</button>
+                    </div>
+
+                </div>
+                <br><br>
+                <div class="blog_Card">
+                    <div class="blog_single_Card" id="#Internship">
+                        <h4>Top Internship platforms</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Tempora quos laudantium sed consectetur eius
+                            iste, vero nesciunt asperiores maxime minus,
+                            repellat incidunt! At ullam deleniti aliquam
+                            repellat placeat quo non!</p>
+                        <button>Know more</button>
+                    </div>
+                    <div class="blog_single_Card" id="#Internship">
+                        <h4>Top 10 remote internships</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Tempora quos laudantium sed consectetur eius
+                            iste, vero nesciunt asperiores maxime minus,
+                            repellat incidunt! At ullam deleniti aliquam
+                            repellat placeat quo non!</p>
+                        <button>Know more</button>
+                    </div>
+                    <div class="blog_single_Card" id="#Motivational">
+                        <h4>How to avoid Distractions</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Tempora quos laudantium sed consectetur eius
+                            iste, vero nesciunt asperiores maxime minus,
+                            repellat incidunt! At ullam deleniti aliquam
+                            repellat placeat quo non!</p>
+                        <button>Know more</button>
+                    </div>
+
+                    <div class="blog_single_Card" id="#Motivational">
+                        <h4>Work constantly</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Tempora quos laudantium sed consectetur eius
+                            iste, vero nesciunt asperiores maxime minus,
+                            repellat incidunt! At ullam deleniti aliquam
+                            repellat placeat quo non!</p>
+                        <button>Know more</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="contact" id="contact">
+                <h1>Contact Form</h1>
+                <form action>
+                    <label for="name">
+                        Name
+                    </label> <br>
+                    <input type="text" name="name" id="name">
+                    <br> <br>
+                    <label for="email">
+                        Email
+                    </label> <br>
+                    <input type="email" name="email" id="email">
+                    <br> <br>
+                    <label for="contact">
+                        Contact
+                    </label> <br>
+                    <input type="number" name="contact" id="contact">
+                    <br> <br>
+                    <label for="message">
+                        Message
+                    </label> <br>
+                    <textarea name="msg" id></textarea>
+                    <br> <br>
+                    <button type="submit">Submit</button>
+
+                </form>
+            </div>
+        </nav>
+    </body>
+</html>
