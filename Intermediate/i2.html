@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        table , tr, td{
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 10px;
+            width: 50vw;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body>
+        <p style="font-size: 24px;color: red; text-align: center;">
+            Q). Create a table with merged cells using rowspan and colspan.
+        </p>
+
+        <table>
+            <caption>rowspan , colspan </caption>
+            <br>
+            <tr>
+                <td rowspan="2">State of Health</td>
+                <td colspan="2">Fasting Value</td>
+                <td>After Eating Value</td>
+            </tr>
+            <tr>
+                <td>Minimum</td>
+                <td>Maaximum</td>
+                <td>Two Hours After Eating</td>
+            </tr>
+            <tr>
+                <td>Healthy</td>
+                <td>70</td>
+                <td>100</td>
+                <td>Less than 150</td>
+            </tr>
+            <tr>
+                <td>Pre-Diabetes</td>
+                <td>101</td>
+                <td>126</td>
+                <td>Less Than 140</td>
+            </tr>
+            <tr>
+                <td>Diabetes</td>
+                <td>More than 126</td>
+                <td>N/A</td>
+                <td>Less Than 200</td>
+            </tr>
+        </table>
+    </body>
+</html>

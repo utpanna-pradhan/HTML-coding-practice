@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <p style="font-size: 24px;color: red; text-align: center;">
+            Q). Build a simple registration form with input validation.
+        </p>
+        <fieldset>
+            <legend>Registration Form</legend>
+            <form action>
+                <label for="Fname">First Name :</label>
+                <input type="text" name="Fname" id="Fname"
+                    placeholder="Enter First Name" required>
+                <br><br>
+                <label for="Lname">Last Name :</label>
+                <input type="text" name="Lname" id="Lname"
+                    placeholder="Enter Last Name" required>
+                <br><br>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email"
+                    placeholder="Enter Email" required>
+                <br><br>
+                <label for="phone">Phone Number :</label>
+                <input type="number" name="phone" id="phone"
+                    placeholder="Enter Phone Number" required>
+                <br><br>
+                <label for="gender">Gender :</label>
+                <input type="radio" name="gender" id="gender" value="male">Male
+                <input type="radio" name="gender" id="gender"
+                    value="female">Female
+                <input type="radio" name="gender" id="gender"
+                    value="others">Others
+                <br><br>
+                <label for="course">Course :</label>
+                <input type="checkbox" name="course" id="course" value="BCA">BCA
+                <input type="checkbox" name="course" id="course" value="MCA">MCA
+                <input type="checkbox" name="course" id="course"
+                    value="Btech">Btech
+                <input type="checkbox" name="course" id="course" value="MSC">MSC
+                <br><br>
+                <label for="date">Today :</label>
+                <input type="date" name="date" id="date" required>
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </fieldset>
+    </body>
+</html>
