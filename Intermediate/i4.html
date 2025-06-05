@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Responsive Nav</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .desktop_nav {
+      display: flex;
+      justify-content: space-between;
+      background-color: black;
+      color: white;
+      padding: 10px;
+    }
+
+    .desktop_nav li {
+      list-style: none;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .desktop_nav .right_Side {
+      display: flex;
+    }
+
+    .mobile_nav {
+      display: none;
+    }
+
+    #mobileMenu {
+      display: none;
+      flex-direction: column;
+      background-color: black;
+      color: white;
+    }
+
+    #mobileMenu li {
+      list-style: none;
+      padding: 10px;
+      border-top: 1px solid #333;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .desktop_nav {
+        display: none;
+      }
+
+      .mobile_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        padding: 10px;
+      }
+
+      .hamburger {
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      #mobileMenu {
+        display: none;
+      }
+
+      #mobileMenu.active {
+        display: flex;
+      }
+    }
+  </style>
+    </head>
+    <body>
+        <p style="font-size: 24px; color: red; text-align: center;">
+            Q) Make a responsive navigation bar using semantic tags.
+        </p>
+
+        <!-- Desktop Nav -->
+        <nav class="desktop_nav">
+            <ul class="left_Side">
+                <li>Brand</li>
+            </ul>
+            <ul class="right_Side">
+                <li>Home</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Info</li>
+                <li>Work</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Nav -->
+        <nav class="mobile_nav">
+            <div class="left_Side">
+                <li>Brand</li>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <ul id="mobileMenu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Info</li>
+            <li>Work</li>
+            <li>Contact</li>
+        </ul>
+
+        <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("active");
+    }
+  </script>
+    </body>
+</html>
