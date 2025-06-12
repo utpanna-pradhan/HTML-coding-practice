@@ -2,15 +2,6 @@
 
 This repository contains **150 HTML coding questions** divided into three levels – **Basic**, **Intermediate**, and **Advanced** – to help you build and strengthen your HTML skills with hands-on practice.
 
-## 📁 Folder Structure
-
-HTML-coding-practice/
-├── Basic/  (Q1 - Q50)
-├── Intermediate/ (Q51 - Q100)
-├── Advanced/  (Q101 - Q150)
-
-
-
 
 ## 📁 Folder Structure
 
