@@ -4,79 +4,144 @@ Basics
 # 1.What is HTML?
 - HTML (HyperText Markup Language) is the standard language used to create web pages.
 - It is used to give structure to a web page
-- Without HTML also we are able to display a web page but that will not follow any structure .
-- Every webpage you see online, from news sites to social media, is built using HTML. 
-# 2.What does HTML stand for?
+- Without HTML also we are able to display a web page but that will not follow any structure .
+- Every webpage you see online, from news sites to social media, is built using HTML.
 
+# 2.What does HTML stand for?
 - HyperText Markup Language.
 
 # 3.What are HTML tags?
-
-Tags are elements enclosed in angle brackets (e.g., <p>) used to define HTML content.
+- It is used to provide instructions to web browsers on how to render content
+- It is a part of HTML element
+- They are not case sensitive, i.e <p> =<P>
+- eg : &lt;br&gt;,&lt;h1&gt;,&lt;div&gt;,&lt;p&gt; etc.
 
 # 4.What is the difference between HTML elements and tags?
+- A tag is part of an element. 
+- An element includes the start tag, content, and end tag.
+- syntax for element - &lt;start tag&gt;content&lt;/end tag&gt;
+- eg: &lt;h1&gt; This is a heading tag &lt;/h1&gt;
 
-A tag is part of an element. An element includes the start tag, content, and end tag.
-
-# 5.What is the purpose of the <!DOCTYPE html> declaration?
-
-It defines the document type and HTML version being used.
+# 5.What is the purpose of the &lt;!DOCTYPE html&gt; declaration?
+- It defines the document type and HTML version being used.
+- All HTML documents must start with a &lt;!DOCTYPE&gt;.
+- Not an HTML tag.
+- Not case sensitive.
 
 # 6.What are void (self-closing) elements in HTML?
+- Elements that don't have an end tag .
+- They don't have any content.
+- Empty tag
+- eg : &lt;br&gt;,&lt;hr&gt;,&lt;img&gt;,&lt;link&gt;
 
-Elements that don’t have an end tag (e.g., <br>, <img>).
+# 7.What is the use of the &lt;html&gt; tag?
 
-# 7.What is the use of the <html> tag?
+- It wraps the entire HTML document.
+- Root element .
+- Parent tag.
 
-It wraps the entire HTML document.
+# 8.What is the purpose of the &lt;head&gt; tag?
 
-# 8.What is the purpose of the <head> tag?
+- It contains meta-information, links to stylesheets, and scripts.
+- Placed between the &lt;html&gt; tag and the &lt;body&gt; tag.
+- Not for user.
+- Not visible to frontend.
+- Pass information to the browser .
+- eg: 
 
-It contains meta-information, links to stylesheets, and scripts.
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width" /&gt;
 
-# 9.What is contained within the <body> tag?
+# 9.What is contained within the &lt;body&gt; tag?
 
-All visible content on a webpage (text, images, links, etc.).
+- All visible content on a webpage .
+- Display on browser.
+- Can be only one &lt;body&gt;
 
-# 10.What is the role of the <title> tag?
+# 10.What is the role of the &lt;title&gt; tag?
 
-It sets the title of the webpage shown in the browser tab.
+- It sets the title of the webpage shown in the browser tab.
+- Required tag in HTML documents.
+- Important for search engine optimization (SEO)
+- Longer, descriptive title performs better
+- Beyond 55–60 characters may be lost.
+- Should be as unique as possible.
+- Describe the page's purpose.
+- Mostly user read the page title and infer the content the page contains.
 
-Text & Formatting
+# 11.What does the &lt;h1&gt; to &lt;h6&gt; tag represent?
 
-# 11.What does the <h1> to <h6> tag represent?
+- Headings from most to least important.
+- &lt;h1&gt; defines the most important heading.
+- &lt;h6&gt; defines the least important heading.
+- It has six levels(h1-h6)
+- Block level element (Takes 100% width).
+- eg: &lt;h1&gt;Heading level 1&lt;/h1&gt;
 
-Headings from most to least important.
+# 12.What does the &lt;p&gt; tag do?
 
-# 12.What does the <p> tag do?
+- It defines a paragraph.
+- Single blank line before and after each &lt;p&gt; element.
+- Block level element (Takes 100% width).
+- eg: &lt;p&gt;Some text inside paragraph&lt;/p&gt;
 
-It defines a paragraph.
+# 13.What is the difference between &lt;strong&gt; and &lt;b&gt;?
 
-# 13.What is the difference between <strong> and <b>?
+&lt;strong&gt; 
+- Indicates importance.
+- Visual appearance with logical information. 
+- Gives information to browser.
+- Useful for screen reader.
+- Logical tag
 
-<strong> indicates importance; <b> just makes text bold.
+&lt;b&gt; 
+- Just makes text bold.
+- Provide only visual appearance .
+- No logical information.
+- Doesn't pass any information to broswer.
+- Physical tag.
 
-# 14.What is the difference between <em> and <i>?
+# 14.What is the difference between &lt;em&gt; and &lt;i&gt;?
 
-<em> adds emphasis; <i> italicizes text visually only.
+&lt;em&gt; 
+- adds emphasis. 
+- Visual appearance with logical information.
+- Gives information to browser.
+- Useful for screen reader.
+- Logical tag
 
-# 15.What is the <br> tag used for?
+&lt;i&gt;
+- italicizes text visually only.
+- Provide only visual appearance .
+- No logical information.
+- Doesn't pass any information to broswer.
+- Physical tag.
 
-To insert a line break.
+# 15.What is the &lt;br&gt; tag used for?
+
+- To insert a line break.
+- Empty tag.
 
 # 16.How is a horizontal line created in HTML?
 
-Using the <hr> tag.
+- Using the &lt;hr&gt; tag.
+- Empty tag.
 
 # 17.What is the difference between pre and code?
 
-&lt;pre&gt; preserves spacing and formatting; <code> is for inline code.
+&lt;pre&gt;
+ preserves spacing and formatting both spaces and line breaks.
+preformatted text.
 
-# 18. What does the <blockquote> tag do?
+&lt;code&gt;
+Used for inline code.
+Text will be displayed exactly as written in the HTML source code
+
+# 18. What does the &lt;blockquote&gt; tag do?
 
 It defines a block of quoted text.
 
-# 19.What is the <abbr> tag used for?
+# 19.What is the &lt;abbr&gt; tag used for?
 
 To define abbreviations or acronyms.
 
