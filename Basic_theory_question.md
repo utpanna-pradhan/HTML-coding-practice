@@ -129,48 +129,74 @@ Basics
 
 # 17.What is the difference between pre and code?
 
-&lt;pre&gt;
- preserves spacing and formatting both spaces and line breaks.
-preformatted text.
+- &lt;pre&gt;
+ - preserves spacing and formatting both spaces and line breaks.
+ - preformatted text.
 
-&lt;code&gt;
-Used for inline code.
-Text will be displayed exactly as written in the HTML source code
+- &lt;code&gt;
+ - Used for inline code.
+ - Text will be displayed exactly as written in the HTML source code
 
 # 18. What does the &lt;blockquote&gt; tag do?
-
-It defines a block of quoted text.
+- It defines a block of quoted text.
+- A section that is quoted from another source.
 
 # 19.What is the &lt;abbr&gt; tag used for?
+- To define abbreviations or acronyms.
+- Use title attribute to show the description for the abbreviation
+- eg: &lt;abbr title="Cascading Style Sheets"&gt;CSS&lt;/abbr&gt;
 
-To define abbreviations or acronyms.
+# 20.What does the &lt;mark&gt; tag represent?
+- Highlighted or marked text.
+- eg: &lt;mark&gt;HTML&lt;/mark&gt;
 
-# 20.What does the <mark> tag represent?
+# 21. What is the &lt;a&gt; tag used for?
+- To create hyperlinks.
+- Link from one page to another.
+- It has attributes: 
 
-Highlighted or marked text.
-# 3 What is the <a> tag used for?
+- href
+ - URL that the hyperlink
 
-To create hyperlinks.
+- target
+ - _self: opens in the current browsing tab. (Default)
+ - _blank: opens in a new tab
+ - _parent: opens in parent browsing context of the current one. If no parent, behaves as _self.
+ - _top: opens in the topmost browsing context. To be specific, this means the "highest" context that's an ancestor of the current one. If no ancestors, behaves as _self.
 
-# 3 How do you open a link in a new tab using HTML?
+- download
+ - Downloaded linked URL .
 
-Add target="_blank" to the <a> tag.
+- type
+ - Specifies linked URL's format.
 
-# 3 What are relative and absolute URLs?
+- rel
+ - Specify the relationship between the current document and the linked document
 
-Relative: relative to the current page; Absolute: full URL with protocol.
+# 21. How do you open a link in a new tab using HTML?
+- Add target="_blank" to the &lt;a&gt; tag.
 
-# 3 How do you create an image in HTML?
+# 22. What are relative and absolute URLs?
+- Relative: relative to the current page.Points to the path located in the system. 
+- Absolute: full URL to a file.
 
-Using <img src="image.jpg" alt="description">.
+# 23. How do you create an image in HTML?
+- Using &lt;img src="image.jpg" alt="description" height="500" width="500" loading="lazy"&gt;.
+- src attribute holds the path to the image.
+- alt attribute holds an alternative text for the image
+- height, width attributes specifies the height and width of an image.
+- loading attribute tells how the browser should load the image
 
-# 3 What is the use of the alt attribute in the <img> tag?
+ - eager - Loads the image immediately
+ - lazy-defer loading of images until some conditions are met,improves the performance of the content
 
-Describes the image for accessibility and when image fails to load.
+# 24. What is the use of the alt attribute in the &lt;img&gt; tag?
+- Alternative text .
+- Describes the image for accessibility and when image fails to load.
 
 # 3 Can an image be used as a link? How?
 
-Yes, by wrapping it in an <a> tag: <a href="url"><img src="..."></a>.
+Yes, by wrapping it in an <a&gt; tag: <a href="url"><img src="..."></a>.
 
 # 3 What is an image map?
 
