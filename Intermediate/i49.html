@@ -1,130 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        .open{
-            font-size: 22px;
-            font-weight: bold;
-            /* z-index: 0; */
-            position: absolute;
-             top: 20px;
-            left: 20px;
-            transition:  0.5s ease-in-out;
-            /* left: 10%;
-            top: 10%; */
-        }
-        .hamburger_Btn{
-          
-            cursor: pointer;
-            border-radius: 5px;
-             padding: 6px 10px;
-           
-        }
-        .sidenav_bar{
-            background-color: black;
-            color: white;
-            padding: 18px;
-            width: 250px;
-            height: 100vh;
-           border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-             top: 0;
-      left: 0;
-            /* opacity: 0.9; */
-            font-size: 23px;
-            position: fixed;
-            z-index: 999;
-            /* display: none; */
-            transform: translateX(-100%);
-           transition: transform 0.4s ease;
-        }
-         .sidenav_bar.active{
-            transform: translateX(0%);
-         }
-       li{
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .open {
+        font-size: 22px;
+        font-weight: bold;
+       
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        transition: 0.5s ease-in-out;
+        
+      }
+      .hamburger_Btn {
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 6px 10px;
+      }
+      .sidenav_bar {
+        background-color: black;
+        color: white;
+        padding: 18px;
+        width: 250px;
+        height: 100vh;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        top: 0;
+        left: 0;
+       
+        font-size: 23px;
+        position: fixed;
+        z-index: 999;
+        
+        transform: translateX(-100%);
+        transition: transform 0.4s ease;
+      }
+      .sidenav_bar.active {
+        transform: translateX(0%);
+      }
+      li {
         list-style-type: none;
         text-align: center;
-         margin: 20px 0;
-       }
-       li a{
+        margin: 20px 0;
+      }
+      li a {
         text-decoration: none;
         color: white;
-           transition: color 0.3s;
-       }
-        li a:hover {
-      color: red;
-    }
-       .fa-xmark{
-       float: inline-end;
-       cursor: pointer;
-       color: red;
-       font-size: 25px;
-       font-weight: bold;
-       
-       }
+        transition: color 0.3s;
+      }
+      li a:hover {
+        color: red;
+      }
+      .fa-xmark {
+        float: inline-end;
+        cursor: pointer;
+        color: red;
+        font-size: 25px;
+        font-weight: bold;
+      }
     </style>
-</head>
-<body>
-     <p style="font-size: 24px; color: red; text-align: center">
-            Q). Create a layout with sidebar navigation.
-        </p>
-        <div id="sidenav_bar" class="sidenav_bar">
-           <button onclick="toggleSidebar()" class="fa-xmark"><i class="fa-solid fa-xmark"></i></button> 
-            <br><br>
-            <ul >
-                 <li>
-                 <a href="#home">Home</a>
-            </li><br><br>
-             <li>
-                 <a href="#about">About</a>
-            </li><br><br>
-             <li>
-                 <a href="#blog">Blog</a>
-            </li><br><br>
-            <li>
-                 <a href="#contact">Contact</a>
-            </li><br><br>
-            <li>
-                 <a href="#more">More</a>
-            </li><br><br>
-            </ul>
-           
-          
-           
-        </div>
-        <p class="open" id="open">
-         <button onclick="toggleSidebar()" class="hamburger_Btn"><i class="fa-solid fa-bars" ></i></button>   Open
-        </p>
+  </head>
+  <body>
+    <p style="font-size: 24px; color: red; text-align: center">
+      Q). Create a layout with sidebar navigation.
+    </p>
+    <div id="sidenav_bar" class="sidenav_bar">
+      <button onclick="toggleSidebar()" class="fa-xmark">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <br /><br />
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <br /><br />
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <br /><br />
+        <li>
+          <a href="#blog">Blog</a>
+        </li>
+        <br /><br />
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+        <br /><br />
+        <li>
+          <a href="#more">More</a>
+        </li>
+        <br /><br />
+      </ul>
+    </div>
+    <p class="open" id="open">
+      <button onclick="toggleSidebar()" class="hamburger_Btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      Open
+    </p>
     <script>
-        function toggleSidebar(){
-               const sidebar = document.getElementById("sidenav_bar");
-                sidebar.classList.toggle("active");
-                const openBtn = document.getElementById("openBtn");
-                if (sidebar.classList.contains("active")) {
-                    openBtn.style.display = "none";
-                } else {
-                    openBtn.style.display = "block";
-                }
-        }
-        // function sidenav(){
-        //     document.getElementById("sidenav_bar").style.display="block";
-        //      document.getElementById("open").style.display="none"
+      function toggleSidebar(){
+             const sidebar = document.getElementById("sidenav_bar");
+              sidebar.classList.toggle("active");
+              const openBtn = document.getElementById("openBtn");
+              if (sidebar.classList.contains("active")) {
+                  openBtn.style.display = "none";
+              } else {
+                  openBtn.style.display = "block";
+              }
+      }
+      // function sidenav(){
+      //     document.getElementById("sidenav_bar").style.display="block";
+      //      document.getElementById("open").style.display="none"
 
-        // }
-        //  function closebtn(){
-        //     document.getElementById("sidenav_bar").style.display="none";
-        //      document.getElementById("open").style.display="block"
+      // }
+      //  function closebtn(){
+      //     document.getElementById("sidenav_bar").style.display="none";
+      //      document.getElementById("open").style.display="block"
 
-        // }
+      // }
     </script>
-</body>
+  </body>
 </html>
