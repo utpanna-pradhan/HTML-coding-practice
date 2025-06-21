@@ -1,25 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-     <p style="font-size: 24px; color: red; text-align: center">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            
+        }
+        body{
+background-color: lightgray;
+        }
+        h2{
+            color: rgb(83, 83, 83);
+            padding: 15px;
+            text-align: center;
+            font-size: 2rem;
+        }
+        .faq-container{
+            background-color: white;
+            padding: 20px;
+            max-width: 800px;
+            margin: 30px auto;
+            border-radius: 18px;
+            box-shadow: 5px 15px 20px 5px rgba(0,0,0,0.5 );
+        }
+        .faq_item{
+            border-bottom:1px solid rgba(169, 169, 169, 0.788);
+            padding: 15px;
+        }
+        .faq_item .question button{
+            border: none;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            font-size: 1.5rem;
+            color: rgb(7, 127, 207);
+            font-weight: 600;
+            padding: 20px 0px;
+        }
+        .icon{
+            color: rgb(82, 81, 81);
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        .icon.active{
+            content: "-";
+        }
+    </style>
+    </head>
+    <body>
+        <p style="font-size: 24px; color: red; text-align: center">
             Q). Create an FAQ layout with toggle questions.
         </p>
-        <section class="faq-sec">
-            <h1>Frequently askedquestions</h1>
-            <div class="faq">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Did youhjhjn?
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="faq-answer"></div>
+        <div class="faq-container">
+            <section>
+                <h2>FAQ Section</h2>
+                <div class="faq_item">
+                    <div class="question">
+                        <button class="faq_question">
+                            What do you mean by HTML?
+                            <span class="icon">+</span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            HTML is hyper text mark up language.It is used to
+                            give structure to a website.
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
-</body>
+                <div class="faq_item">
+                    <div class="question">
+                        <button class="faq_question">
+                            HTML4 VS HTML5?
+                            <span class="icon">+</span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            HTML5 has some new features and tags like:
+                            audio,vide,sematic tag.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq_item">
+                    <div class="question">
+                        <button class="faq_question">
+                            Why we need HTML?
+                            <span class="icon">+</span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            We need HTML as all the broswer undestand
+                            HTML,CSS,JS to display a website.With out HTML also
+                            we can display but it will not have a structure.
+                        </p>
+                    </div>
+                </div>
+                <br><br>
+            </section>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded",()=>{
+                const questions=document.querySelectorAll("faq_question");
+                questions.forEach(question =>{
+                    question.addEventListener("click",()=>{
+                        question.classList.toggle('active');
+                    })
+                })
+            })
+        </script>
+    </body>
 </html>
