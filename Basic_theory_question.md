@@ -194,6 +194,7 @@ Basics
 - Alternative text .
 - Describes the image for accessibility and when image fails to load.
 
+<<<<<<< HEAD
 # 25 Can an image be used as a link? How?
 
 Yes, by wrapping it in an <a&gt; tag: <a href="url"><img src="..."></a>.
@@ -211,11 +212,31 @@ Shows additional info when hovered over.
 Use id and href="#id".
 
 # 29 How do you make an email link in HTML?
+=======
+# 25. Can an image be used as a link? How?
+
+Yes, by wrapping it in an <a&gt; tag: <a href="url"><img src="..."></a>.
+
+# 26. What is an image map?
+
+A way to make different areas of a single image clickable using <map> and <area>.
+
+# 27. What is the title attribute in an anchor tag?
+
+Shows additional info when hovered over.
+
+# 28. How do you link to a section within the same page?
+
+Use id and href="#id".
+
+# 29. How do you make an email link in HTML?
+>>>>>>> 17eda212afd389ed8beeaf8f7b63f174c55cde60
 
 <a href="mailto:someone@example.com">Email Us</a>.
 
 Lists
 
+<<<<<<< HEAD
 # 30 What are the types of lists in HTML?
 
 Ordered (<ol>), Unordered (<ul>), and Definition lists (<dl>).
@@ -233,11 +254,31 @@ To define a description list.
 <dt> defines the term; <dd> defines the description.
 
 # 34 Can you nest lists in HTML?
+=======
+# 30. What are the types of lists in HTML?
+
+Ordered (<ol>), Unordered (<ul>), and Definition lists (<dl>).
+
+# 31. What is the difference between <ul> and <ol>?
+
+<ul> creates a bulleted list; <ol> creates a numbered list.
+
+# 32. What is the <dl> tag used for?
+
+To define a description list.
+
+# 33. What do <dt> and <dd> stand for?
+
+<dt> defines the term; <dd> defines the description.
+
+# 34. Can you nest lists in HTML?
+>>>>>>> 17eda212afd389ed8beeaf8f7b63f174c55cde60
 
 Yes, lists can be nested inside list items.
 
 Tables
 
+<<<<<<< HEAD
 # 35 How do you create a table in HTML?
 
 Using <table>, <tr>, <th>, and <td> tags.
@@ -255,11 +296,31 @@ Defines a table row.
 They allow a cell to span multiple columns or rows.
 
 # 39 What is the <caption> tag used for in tables?
+=======
+# 35. How do you create a table in HTML?
+
+Using <table>, <tr>, <th>, and <td> tags.
+
+# 36. What does the <tr> tag do?
+
+Defines a table row.
+
+# 37. What is the difference between <td> and <th>?
+
+<td> defines standard cells; <th> defines header cells.
+
+# 38. What are colspan and rowspan attributes?
+
+They allow a cell to span multiple columns or rows.
+
+# 39. What is the <caption> tag used for in tables?
+>>>>>>> 17eda212afd389ed8beeaf8f7b63f174c55cde60
 
 To add a title or explanation to a table.
 
 Forms
 
+<<<<<<< HEAD
 # 40 What is the <form> tag used for?
 
 It defines a form that can collect user input.
@@ -285,6 +346,33 @@ It binds a label to a specific input.
 <input> is for single-line; <textarea> is for multi-line text.
 
 # 46 What is the <select> tag used for?
+=======
+# 40. What is the <form> tag used for?
+
+It defines a form that can collect user input.
+
+# 41. What are the common input types in HTML?
+
+text, password, email, radio, checkbox, submit, etc.
+
+# 42. What is the use of the action attribute in forms?
+
+Specifies the URL to send form data.
+
+# 43. What is the use of the method attribute?
+
+Defines HTTP method: GET or POST.
+
+# 44. What is the purpose of the <label> tag?
+
+It binds a label to a specific input.
+
+# 45. What is the difference between <input type="text"> and <textarea>?
+
+<input> is for single-line; <textarea> is for multi-line text.
+
+# 46. What is the <select> tag used for?
+>>>>>>> 17eda212afd389ed8beeaf8f7b63f174c55cde60
 
 To create dropdown lists.
 
@@ -292,6 +380,7 @@ To create dropdown lists.
 
 <fieldset> groups form elements; <legend> provides a caption.
 
+<<<<<<< HEAD
 # 48 What is the purpose of the required attribute?
 
 Makes a field mandatory to submit.
@@ -300,90 +389,100 @@ Makes a field mandatory to submit.
 
 Displays text in an empty input field for guidance.
 # 50 What are semantic tags?
+=======
+# 47. What is the purpose of the required attribute?
+
+Makes a field mandatory to submit.
+
+# 48. What is the placeholder attribute?
+
+Displays text in an empty input field for guidance.
+# 49. What are semantic tags?
+>>>>>>> 17eda212afd389ed8beeaf8f7b63f174c55cde60
 
 Tags that clearly define their content’s meaning (e.g., <article>, <section>).
 
-# 3 What is the difference between <div> and <section>?
+# 50 What is the difference between <div> and <section>?
 
 <div> is generic; <section> has semantic meaning.
 
-# 3 What is the <article> tag used for?
+# 51. What is the <article> tag used for?
 
 For independent, self-contained content.
 
-# 3 What does the <header> tag represent?
+# 52. What does the <header> tag represent?
 
 A container for introductory content or navigational links.
 
-# 3 What is the <footer> tag used for?
+# 53. What is the <footer> tag used for?
 
 Contains footer information for its nearest section or the page.
 
-# 3 What is the <nav> tag?
+# 54. What is the <nav> tag?
 
 Defines a block of navigation links.
 
-# 3 What is the purpose of <main>?
+# 56. What is the purpose of <main>?
 
 Denotes the primary content of a document.
 
-# 3 What is the <aside> tag used for?
+# 57. What is the <aside> tag used for?
 
 For side content, like ads or related links.
 
-# 3 What is the difference between <span> and <div>?
+# 58. What is the difference between <span> and <div>?
 
 <div> is a block-level element; <span> is inline.
 
-# 3 Why are semantic elements important for accessibility and SEO?
+# 59. Why are semantic elements important for accessibility and SEO?
 
 They help screen readers and search engines understand page structure.
 
 Multimedia & Embeds
 
-# 3 What is the <audio> tag used for?
+# 60. What is the <audio> tag used for?
 
 To embed audio files.
 
-# 3 What is the <video> tag used for?
+# 61. What is the <video> tag used for?
 
 To embed video files.
 
-# 3 What is the controls attribute in <audio> and <video>?
+# 62. What is the controls attribute in <audio> and <video>?
 
 It displays built-in playback controls.
 
-# 3 What is the <source> tag used for?
+# 63. What is the <source> tag used for?
 
 Specifies multiple media sources.
 
-# 3 How do you embed a YouTube video in HTML?
+# 64. How do you embed a YouTube video in HTML?
 
 Using the <iframe> tag with the video URL.
 
-# 3 What is the <embed> tag used for?
+# 65. What is the <embed> tag used for?
 
 To embed external content (like PDFs, Flash).
 
-# 3 What is the <object> tag used for?
+# 66. What is the <object> tag used for?
 
 Embeds multimedia or external resources.
 
-# 3 What is the difference between <embed> and <object>?
+# 67. What is the difference between <embed> and <object>?
 
 <object> is more versatile; <embed> is simpler.
 
-# 3 What is the <iframe> tag used for?
+# 68. What is the <iframe> tag used for?
 
 To embed another HTML page within the current one.
 
-# 3 What are sandbox attributes in iframes?
+# 69. What are sandbox attributes in iframes?
 
 Restrict iframe content behavior for security.
 
 Meta Tags & Head
 
-# 3 What are meta tags?
+# 70 What are meta tags?
 
 Tags that provide metadata about the document.
 
