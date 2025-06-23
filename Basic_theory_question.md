@@ -194,7 +194,6 @@ Basics
 - Alternative text .
 - Describes the image for accessibility and when image fails to load.
 
-<<<<<<< HEAD
 # 25 Can an image be used as a link? How?
 
 Yes, by wrapping it in an <a&gt; tag: <a href="url"><img src="..."></a>.
@@ -212,7 +211,7 @@ Shows additional info when hovered over.
 Use id and href="#id".
 
 # 29 How do you make an email link in HTML?
-=======
+
 # 25. Can an image be used as a link? How?
 
 Yes, by wrapping it in an <a&gt; tag: <a href="url"><img src="..."></a>.
@@ -236,7 +235,6 @@ Use id and href="#id".
 
 Lists
 
-<<<<<<< HEAD
 # 30 What are the types of lists in HTML?
 
 Ordered (<ol>), Unordered (<ul>), and Definition lists (<dl>).
@@ -254,7 +252,6 @@ To define a description list.
 <dt> defines the term; <dd> defines the description.
 
 # 34 Can you nest lists in HTML?
-=======
 # 30. What are the types of lists in HTML?
 
 Ordered (<ol>), Unordered (<ul>), and Definition lists (<dl>).
@@ -272,13 +269,11 @@ To define a description list.
 <dt> defines the term; <dd> defines the description.
 
 # 34. Can you nest lists in HTML?
->>>>>>> 17eda212afd389ed8beeaf8f7b63f174c55cde60
 
 Yes, lists can be nested inside list items.
 
 Tables
 
-<<<<<<< HEAD
 # 35 How do you create a table in HTML?
 
 Using <table>, <tr>, <th>, and <td> tags.
@@ -296,7 +291,6 @@ Defines a table row.
 They allow a cell to span multiple columns or rows.
 
 # 39 What is the <caption> tag used for in tables?
-=======
 # 35. How do you create a table in HTML?
 
 Using <table>, <tr>, <th>, and <td> tags.
@@ -314,13 +308,11 @@ Defines a table row.
 They allow a cell to span multiple columns or rows.
 
 # 39. What is the <caption> tag used for in tables?
->>>>>>> 17eda212afd389ed8beeaf8f7b63f174c55cde60
 
 To add a title or explanation to a table.
 
 Forms
 
-<<<<<<< HEAD
 # 40 What is the <form> tag used for?
 
 It defines a form that can collect user input.
@@ -346,7 +338,7 @@ It binds a label to a specific input.
 <input> is for single-line; <textarea> is for multi-line text.
 
 # 46 What is the <select> tag used for?
-=======
+
 # 40. What is the <form> tag used for?
 
 It defines a form that can collect user input.
@@ -372,7 +364,6 @@ It binds a label to a specific input.
 <input> is for single-line; <textarea> is for multi-line text.
 
 # 46. What is the <select> tag used for?
->>>>>>> 17eda212afd389ed8beeaf8f7b63f174c55cde60
 
 To create dropdown lists.
 
@@ -380,7 +371,7 @@ To create dropdown lists.
 
 <fieldset> groups form elements; <legend> provides a caption.
 
-<<<<<<< HEAD
+
 # 48 What is the purpose of the required attribute?
 
 Makes a field mandatory to submit.
@@ -398,7 +389,6 @@ Makes a field mandatory to submit.
 
 Displays text in an empty input field for guidance.
 # 49. What are semantic tags?
->>>>>>> 17eda212afd389ed8beeaf8f7b63f174c55cde60
 
 Tags that clearly define their content’s meaning (e.g., <article>, <section>).
 
