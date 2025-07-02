@@ -1,0 +1,416 @@
+{
+  "basic": [
+    {
+      "id": 1,
+      "title": "Style a paragraph with different font size and color.",
+      "link": "./basic/q1.html"
+    },
+    {
+      "id": 2,
+      "title": "Center a &lt;div&gt; horizontally using margin.",
+      "link": "./basic/q2.html"
+    },
+       {
+      "id": 3,
+      "title": " Add background color to a &lt;section&gt;.",
+      "link": "./basic/q3.html"
+    },
+    {
+      "id": 4,
+      "title": "Create a hover effect that changes button color.",
+      "link": "./basic/q4.html"
+    },
+     {
+      "id": 5,
+      "title": "  Apply padding and margin to an element.",
+      "link": "./basic/q5.html"
+    },
+       {
+      "id": 6,
+      "title": " Change font style to italic and weight to bold.",
+      "link": "./basic/q6.html"
+    },
+    {
+      "id": 7,
+      "title": " Add a border to a box with border-radius.",
+      "link": "./basic/q7.html"
+    },
+     {
+      "id": 8,
+      "title": "Create a shadow around a card using box-shadow.",
+      "link": "./basic/q8.html"
+    },
+       {
+      "id": 9,
+      "title": " Style a list without bullets using list-style-type.",
+      "link": "./basic/q9.html"
+    },
+  
+     {
+      "id": 10,
+      "title": "Create a box model layout using margin, padding, border.",
+      "link": "./basic/q11.html"
+    },
+       {
+      "id": 11,
+      "title": "Style a paragraph with different font size and color.",
+      "link": "./basic/q12.html"
+    },
+    {
+      "id": 12,
+      "title": "Create a box model layout using margin, padding, border.",
+      "link": "./basic/q13.html"
+    },
+     {
+      "id": 13,
+      "title": "Align text to the center and justify content.",
+      "link": "./basic/q14.html"
+    },
+       {
+      "id": 14,
+      "title": "Use a custom Google Font in the page.",
+      "link": "./basic/q15.html"
+    },
+    {
+      "id": 15,
+      "title": "Add a background image to a container.",
+      "link": "./basic/q16.html"
+    },
+     {
+      "id": 16,
+      "title": "Change cursor to pointer on hover.",
+      "link": "./basic/q17.html"
+    },
+       {
+      "id": 17,
+      "title": "Make a sticky header using position: sticky.",
+      "link": "./basic/q18.html"
+    },
+    {
+      "id": 18,
+      "title": "Use z-index to stack elements properly.",
+      "link": "./basic/q19.html"
+    },
+     {
+      "id": 19,
+      "title": "Make an image round using border-radius: 50%.",
+      "link": "./basic/q20.html"
+    },
+       {
+      "id": 20,
+      "title": "Highlight a table row on hover.",
+      "link": "./basic/q21.html"
+    },
+    {
+      "id": 21,
+      "title": "Create a fixed footer.",
+      "link": "./basic/q22.html"
+    },
+     {
+      "id": 22,
+      "title": "Hide an element using display: none.",
+      "link": "./basic/q23.html"
+    },
+       {
+      "id": 23,
+      "title": "Use visibility: hidden to hide content.",
+      "link": "./basic/q24.html"
+    },
+    {
+      "id": 24,
+      "title": "Create a gradient background.",
+      "link": "./basic/q25.html"
+    },
+     {
+      "id": 25,
+      "title": "Use opacity to make an image translucent.",
+      "link": "./basic/q26.html"
+    },
+       {
+      "id": 26,
+      "title": "Create a button with a subtle box-shadow.",
+      "link": "./basic/q27.html"
+    },
+    {
+      "id": 27,
+      "title": "Add a dashed border to a container.",
+      "link": "./basic/q28.html"
+    },
+     {
+      "id": 28,
+      "title": "Set max-width for responsive images.",
+      "link": "./basic/q29.html"
+    },
+       {
+      "id": 29,
+      "title": "Center a div vertically using Flexbox.",
+      "link": "./basic/q30.html"
+    },
+    {
+      "id": 30,
+      "title": "Add transition on hover.",
+      "link": "./basic/q31.html"
+    },
+     {
+      "id": 31,
+      "title": "Create a button with rounded corners.",
+      "link": "./basic/q32.html"
+    },
+       {
+      "id": 32,
+      "title": "Use line-height to space text vertically.",
+      "link": "./basic/q33.html"
+    },
+    {
+      "id": 33,
+      "title": "Add a text underline only on hover.",
+      "link": "./basic/q34.html"
+    },
+     {
+      "id": 34,
+      "title": "Remove text underline from links.",
+      "link": "./basic/q35.html"
+    }, {
+      "id": 35,
+      "title": "Create a blockquote with styling.",
+      "link": "./basic/q36.html"
+    }, {
+      "id": 36,
+      "title": "Style code snippets with a monospaced font.",
+      "link": "./basic/q37.html"
+    }, {
+      "id": 37,
+      "title": "Add spacing between inline elements.",
+      "link": "./basic/q38.html"
+    }, {
+      "id": 38,
+      "title": "Use overflow: hidden to crop content.",
+      "link": "./basic/q39.html"
+    }, {
+      "id": 39,
+      "title": "Use min-height to prevent collapsing.",
+      "link": "./basic/q40.html"
+    }, {
+      "id": 40,
+      "title": "Set a responsive width using percentages.",
+      "link": "./basic/q41.html"
+    }, {
+      "id": 41,
+      "title": "Make a div scrollable with overflow: scroll.",
+      "link": "./basic/q42.html"
+    }, {
+      "id": 42,
+      "title": "Add a top border only.",
+      "link": "./basic/q43.html"
+    }, {
+      "id": 44,
+      "title": "Create an active state for a nav link.",
+      "link": "./basic/q44.html"
+    }, {
+      "id": 45,
+      "title": "Use text-indent for paragraph start.",
+      "link": "./basic/q45.html"
+    }, {
+      "id": 46,
+      "title": "Apply white-space: nowrap to a heading.",
+      "link": "./basic/q46.html"
+    }, {
+      "id": 47,
+      "title": "Create a div with a fixed width and height.",
+      "link": "./basic/q47.html"
+    }, {
+      "id": 48,
+      "title": "Change default bullet style using list-style-image.",
+      "link": "./basic/q48.html"
+    }, {
+      "id": 49,
+      "title": "Add outline to input on focus.",
+      "link": "./basic/q49.html"
+    }, {
+      "id": 50,
+      "title": "Use :first-child selector on a list.",
+      "link": "./basic/q50.html"
+    }, {
+      "id": 51,
+      "title": "Visibility show , hidden.",
+      "link": "./basic/q51.html"
+    }, {
+      "id": 52,
+      "title": "Transformation",
+      "link": "./basic/q52.html"
+    }, {
+      "id": 53,
+      "title": "Resizable property",
+      "link": "./basic/q53.html"
+    }
+
+   
+  ],
+  "intermediate": [
+    {
+      "id": 1,
+      "title": "Build a simple registration form with input validation.",
+      "link": "./Intermediate/i1.html"
+    },
+        {
+      "id": 2,
+      "title": "Create a table with merged cells using rowspan and colspan.",
+      "link": "./Intermediate/i2.html"
+    },
+        {
+      "id": 3,
+      "title": " Add an image map with clickable regions.",
+      "link": "./Intermediate/i3.html"
+    },
+        {
+      "id": 4,
+      "title": "Make a responsive navigation bar using semantic tags.",
+      "link": "./Intermediate/i4.html"
+    },
+        {
+      "id": 5,
+      "title": "Create a dropdown list using &lt;select&gt; and &lt;option&gt;.",
+      "link": "./Intermediate/i5.html"
+    },
+        {
+      "id": 6,
+      "title": " Create a form with grouped radio buttons.",
+      "link": "./Intermediate/i6.html"
+    },
+        {
+      "id": 7,
+      "title": "Add auto-complete off to a form input.",
+      "link": "./Intermediate/i7.html"
+    },
+        {
+      "id": 8,
+      "title": "Use &lt;details&gt; and &lt;summary&gt; for expandable content.",
+      "link": "./Intermediate/i8.html"
+    },
+        {
+      "id": 9,
+      "title": "Embed a Google Map.",
+      "link": "./Intermediate/i9.html"
+    },
+        {
+      "id": 10,
+      "title": "Use audio controls to play an MP3 file.",
+      "link": "./Intermediate/i10.html"
+    },
+        {
+      "id": 11,
+      "title": "Use video controls to show a video file.",
+      "link": "./Intermediate/i11.html"
+    },
+        {
+      "id": 12,
+      "title": "Add a calendar date picker.",
+      "link": "./Intermediate/i12.html"
+    },
+        {
+      "id":13,
+      "title": "Create a table with header, body, and footer.",
+      "link": "./Intermediate/i13.html"
+    },
+        {
+      "id": 14,
+      "title": "Show a tooltip using title attribute.",
+      "link": "./Intermediate/i14.html"
+    },
+        {
+      "id": 15,
+      "title": "Create a custom checkbox layout.",
+      "link": "./Intermediate/i15.html"
+    },
+        {
+      "id": 16,
+      "title": "Build a pricing table layout.",
+      "link": "./Intermediate/i16.html"
+    },
+        {
+      "id": 17,
+      "title": "Design a blog post layout using &lt;article&gt;.",
+      "link": "./Intermediate/i17.html"
+    },
+        {
+      "id": 18,
+      "title": "Add Open Graph tags to a page.",
+      "link": "./Intermediate/i18.html"
+    },
+        {
+      "id": 19,
+      "title": "Build a basic HTML resume layout.",
+      "link": "./Intermediate/i19.html"
+    },
+        {
+      "id": 20,
+      "title": " Create an FAQ layout with toggle questions.",
+      "link": "./Intermediate/i20.html"
+    },
+        {
+      "id": 21,
+      "title": "Build a simple registration form with input validation.",
+      "link": "./Intermediate/i1.html"
+    },
+        {
+      "id": 22,
+      "title": "Build a simple registration form with input validation.",
+      "link": "./Intermediate/i1.html"
+    },
+        {
+      "id": 23,
+      "title": "Build a simple registration form with input validation.",
+      "link": "./Intermediate/i1.html"
+    },
+        {
+      "id": 24,
+      "title": "Build a simple registration form with input validation.",
+      "link": "./Intermediate/i1.html"
+    },
+        {
+      "id": 25,
+      "title": "Build a simple registration form with input validation.",
+      "link": "./Intermediate/i1.html"
+    },
+        {
+      "id": 26,
+      "title": "Build a simple registration form with input validation.",
+      "link": "./Intermediate/i1.html"
+    },
+        {
+      "id": 27,
+      "title": "Build a simple registration form with input validation.",
+      "link": "./Intermediate/i1.html"
+    },
+        {
+      "id": 28,
+      "title": "Build a simple registration form with input validation.",
+      "link": "./Intermediate/i1.html"
+    },
+        {
+      "id": 29,
+      "title": "Build a simple registration form with input validation.",
+      "link": "./Intermediate/i1.html"
+    },
+        {
+      "id": 30,
+      "title": "Build a simple registration form with input validation.",
+      "link": "./Intermediate/i1.html"
+    },
+        {
+      "id": 31,
+      "title": "Build a simple registration form with input validation.",
+      "link": "./Intermediate/i1.html"
+    }
+
+   
+  ],
+  "advanced": [
+    {
+      "id": 101,
+      "title": "Build a CSS Grid-based dashboard layout.",
+      "link": "./advanced/q101.html"
+    }
+   
+  ]
+}

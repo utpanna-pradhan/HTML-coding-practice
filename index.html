@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Coding Questions</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet" crossorigin="anonymous">
+        <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/tai-bui-HzVBe-8frwc-unsplash.jpg') center/cover fixed no-repeat;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      backdrop-filter: blur(6px);
+    }
+
+    .header h1 {
+      font-size: 2.8rem;
+      font-weight: bold;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    .accordion-button {
+      border-radius: 12px !important;
+      transition: background 0.3s ease;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #ffc107;
+      color: black;
+    }
+
+    table {
+      font-size: 18px;
+      animation: fadeIn 0.8s ease-in;
+    }
+
+    th {
+      font-size: 20px;
+    }
+
+    .btn-load-more {
+      animation: popIn 0.5s ease;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #ffc107;
+    }
+
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes popIn {
+      0% {
+        transform: scale(0.7);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      
+    }
+    tr:hover{
+        background-color: rgba(71, 69, 69,0.5);
+    }
+  </style>
+    </head>
+    <body>
+      
+        <div class="container py-4">
+            <div class="header text-center mb-4">
+                <h1>“HTML<span style="color: #ffc107;"> Coding Questions </span>–
+                    Practice Sets”</h1>
+                <small>Utpanna Pradhan -
+                    <a
+                        href="https://github.com/utpanna-pradhan/HTML-coding-practice"
+                        target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </small>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item bg-transparent mt-4 mb-4">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button
+                            class="accordion-button collapsed fw-bold fs-5 text-dark bg-warning"
+                            type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Basic HTML Coding  <span class="d-none d-md-block"> &nbsp;Questions</span>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="basic-section-body">
+                            <table class="table  table-bordered text-white">
+                                <thead>
+                                    <tr class="text-warning text-center">
+                                        <th>Sl No.</th>
+                                        <th>Question</th>
+                                        <th>Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="basic-table"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-transparent mt-4 mb-4">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button
+                            class="accordion-button collapsed fw-bold fs-5 text-dark bg-warning"
+                            type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Intermediate HTML Coding <span class="d-none d-md-block"> &nbsp;Questions</span>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body"
+                            id="intermediate-section-body">
+                            <table class="table text-white table-bordered ">
+                                <thead>
+                                    <tr class="text-warning text-center">
+                                        <th>Sl No.</th>
+                                        <th>Question</th>
+                                        <th>Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="intermediate-table"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-transparent mt-4 mb-4">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button
+                            class="accordion-button collapsed fw-bold fs-5 text-dark bg-warning"
+                            type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            Advanced HTML Coding <span class="d-none d-md-block"> &nbsp;Questions</span>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="advanced-section-body">
+                            <table class="table text-white table-bordered ">
+                                <thead>
+                                    <tr class="text-warning text-center">
+                                        <th>Sl No.</th>
+                                        <th>Question</th>
+                                        <th>Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="advanced-table"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+        <script>
+    const chunkSize = 20;
+    const dataStore = {
+      basic: [],
+      intermediate: [],
+      advanced: []
+    };
+     const currentIndex = {
+      basic: 0,
+      intermediate: 0,
+      advanced: 0
+    };
+
+    fetch('./data.json')
+      .then(res => res.json())
+      .then(data => {
+       dataStore.basic = data.basic;
+        dataStore.intermediate = data.intermediate;
+
+        createLoadMoreButton('basic');
+        createLoadMoreButton('intermediate');
+
+        renderChunk('basic');
+        renderChunk('intermediate');
+      });
+
+    function renderChunk(category) {
+      const tableBody = document.getElementById(`${category}-table`);
+      const questions = dataStore[category];
+      const start = currentIndex[category];
+      const end = start + chunkSize;
+
+      const chunk = questions.slice(start, end);
+      chunk.forEach(q => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${q.id}</td>
+          <td>${q.title}</td>
+          <td><a href="${q.link}" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+        `;
+        tableBody.appendChild(tr);
+      });
+
+      currentIndex[category] += chunkSize;
+
+      if (currentIndex[category] >= questions.length) {
+        const btn = document.getElementById(`load-more-${category}`);
+        if (btn) btn.disabled = true;
+      }
+    }
+
+    function createLoadMoreButton(category) {
+      const btn = document.createElement('button');
+      btn.innerText = 'Load More';
+      btn.className = 'btn btn-warning d-block mx-auto my-3 btn-load-more';
+      btn.id = `load-more-${category}`;
+      btn.onclick = () => renderChunk(category);
+
+      const section = document.getElementById(`${category}-section-body`) || document.querySelector(`#${category}-table`).closest('.accordion-body');
+      section.appendChild(btn);
+    }
+  </script>
+    </body>
+</html>
