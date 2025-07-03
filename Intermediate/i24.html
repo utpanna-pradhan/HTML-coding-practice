@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p style="font-size: 24px; color: red; text-align: center">
+      Q). Use &lt;canvas&gt; to draw a circle.
+    </p>
+    <canvas id="mycanvas" width="500" height="500">
+        Sorry your browser doesn't support canvas
+    </canvas>
+    <script>
+        const canvas= document.getElementById("mycanvas");
+        const ctx=canvas.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(90,50,40,0,2*Math.PI);
+         ctx.fillStyle = "yellow";
+         ctx.fill();
+        ctx.stroke();
+     
+    </script>
+</body>
+</html>

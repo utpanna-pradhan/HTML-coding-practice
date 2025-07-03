@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
+        
+        .main_Container{
+            background-color:rgb(5, 54, 77);
+            position: relative;
+            z-index: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        body{
+            overflow: hidden;
+        }
+        .not_found{
+            background-color: white;
+            position: absolute;
+            z-index: 1;
+            width: 70vw;
+            top: 10%;
+            left: 27%;
+            height: 90vh;
+            border-radius: 8px;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            /* flex-wrap: wrap; */
+        }
+        .line1{
+            color: rgb(41, 40, 40);
+            font-size: 30px;
+            font-weight: 600;
+        }
+         .line1 span{
+            font-size: 45px;
+             color: rgb(5, 54, 77);
+             font-weight: bolder;
+         }
+         .line2{
+             font-size: 65px;
+             color: rgb(5, 54, 77);
+             font-weight: bolder;
+         }
+         .line3{
+            color: rgb(41, 40, 40);
+            font-size: 23px;
+            font-weight: 500;
+           
+         }
+         button{
+            padding: 15px 20px;
+            max-width: 200px;
+             background-color:rgb(5, 54, 77);
+             border-radius: 18px;
+             color: white;
+             font-size: 18px;
+             border: 1px solid transparent;
+             margin: 20px 0px;
+            
+         }
+         .sad_emoji{
+            position: absolute;
+            z-index: 1;
+            top: 40%;
+            left: 5%;
+            color: white;
+            font-size: 200px;
+         }
+         @media only screen and (max-width: 920px) {
+             .line1{
+            font-size: 20px;
+        }
+         .line1 span{
+            font-size: 35px;
+         }
+         .line2{
+             font-size: 55px;
+         }
+         .line3{ 
+            font-size: 13px;
+           
+         }
+         button{
+           
+             font-size: 14px;
+            
+         }
+         .sad_emoji{
+            font-size: 100px;
+         }
+             }  
+          @media only screen and (max-width: 576px) {
+              .sad_emoji{
+           
+            display: none;
+           
+         }
+          .not_found{
+           
+            width: 90vw;
+            top: 20%;
+            left: 5%;
+           
+           
+        }
+          }
+             </style>
+    </head>
+    <body>
+        <p style="font-size: 24px; color: red; text-align: center">
+            Q). Build a simple 404 error HTML page.
+        </p>
+        <div class="main_Container">
+
+        </div>
+        <div class="sad_emoji">
+            <i class="fa-solid fa-face-frown"></i>
+        </div>
+        <div class="not_found">
+            <p class="line1">OH NO! <span>404</span></p>
+            <p class="line2"> PAGE NOT FOUND</p>
+            <p class="line3">This is probably not what you're looking for.</p>
+            <button>Go back to home</button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
+        body{
+            background-color:#edeef6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            min-height: 100vh;
+        }
+        button{
+            cursor: pointer;
+            padding: 10px 25px;
+            color: #fff;
+            background-color: rgb(0, 128, 107);
+            font-size: 18px;
+            border: 0;
+            border-radius: 10px;
+           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+           /* display: none; */
+        }
+        .modal_container{
+            /* display: none; */
+            opacity: 0;
+            pointer-events: none;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.3);
+            transition: opacity 0.4s ease;
+
+        }
+         .modal_container.show{
+            opacity: 1;
+            pointer-events: auto;
+         }
+        .modal{
+            background-color: #fff;
+            width: 600px;
+            max-width: 100%;
+            padding: 30px 50px;
+            border-radius: 8px;
+            text-align: center;
+              box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+        }
+     .modal p{
+            opacity:0.7 ;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- <p style="font-size: 24px; color: red; text-align: center">
+      Q).Create a modal layout using only HTML.
+    </p> -->
+        <button id="open">Click me</button>
+        <div class="modal_container" id="modal_container">
+            <div class="modal">
+                <h1>Modals are </h1>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quibusdam ea tenetur repudiandae incidunt totam. Nulla quod
+                    voluptatem numquam facilis. Nulla dignissimos veniam quia
+                    fugit dolorum facilis magni libero recusandae quis?</p>
+                <br>
+                <button id="close">Close</button>
+            </div>
+        </div>
+
+        <script>
+        const open = document.getElementById("open");
+        const modal_container=document.getElementById("modal_container");
+        const close=document.getElementById("close");
+        
+        open.addEventListener('click',()=>{
+            modal_container.classList.add("show")
+        })
+        close.addEventListener("click",()=>{
+            modal_container.classList.remove("show")
+        })
+        </script>
+    </body>
+</html>
