@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-     <p style="font-size: 24px; color: red; text-align: center">
-      Q). Create an FAQ layout with toggle questions.
-    </p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
+      
+    </style>
+    </head>
+    <body>
+        <p style="font-size: 24px; color: red; text-align: center">
+            Q). Use &lt;picture&gt; to display responsive images.
+        </p>
+        <picture>
+            <source media="(min-width: 650px)" srcset="../images/p2.webp" ">
+            <source media="(min-width: 465px)" srcset="../images/p3.jpg">
+            <source media="(min-width:320px)" srcset="../images/p1.jpg">
+            <img src="../images/ganesha.jpg" alt>
+        </picture>
+    </body>
 </html>
