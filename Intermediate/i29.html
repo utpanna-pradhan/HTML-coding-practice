@@ -4,10 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        nav{
+             background-color: rgb(146, 11, 52);
+        }
+        ul{
+            padding: 10px;
+        }
+        ul li{
+            display: inline-block;
+            /* padding: 0px 25px; */
+            font-size: 25px;
+           
+        }
+        a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+         li:not(:last-child)::after{
+            content: "/";
+            padding: 0px 20px;
+           color: white;
+            font-size: 29px;
+            font-weight: bolder;
+         }
+    </style>
 </head>
 <body>
      <p style="font-size: 24px; color: red; text-align: center">
       Q). Create a breadcrumb navigation.
     </p>
+    <nav class="breadcrumb">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#info">Info</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
