@@ -1,13 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-     <p style="font-size: 24px; color: red; text-align: center">
-      Q). Create a sticky header using HTML + minimal CSS.
-    </p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
+        nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            align-items: center;
+        }
+        li{
+            list-style-type: none;
+            padding: 15px 25px ;
+            font-size: 1.125rem;
+        
+        }
+        ul{
+            display: flex;
+        }
+        .orange_font{
+            color: orangered;
+        }
+        .main_Content , .sub_content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            margin: auto;
+            gap: 25px;
+             margin-bottom: 50px;
+        }
+        .sticky_content{
+            background-color: black;
+            color: orangered;
+            padding: 20px 25px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            margin-bottom: 50px;
+        }
+        .footer_div{
+            background-color: black;
+            color: white;
+            padding: 20px 30px;
+        }
+    </style>
+    </head>
+    <body>
+        <p style="font-size: 24px; color: red; text-align: center">
+            Q). Create a sticky header using HTML + minimal CSS.
+        </p>
+        <nav>
+            <ul><li class="orange_font" style="font-size: 23px;">Your
+                    Logo</li></ul>
+            <ul>
+                <li class="orange_font">Home</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <main>
+            <div class="main_Content">
+                <h1 class="orange_font">Introduction</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Tenetur sit veniam dolorem velit deleniti, repellendus
+                    perferendis nostrum beatae, rem, illum praesentium totam
+                    perspiciatis. Qui nemo iure culpa nam mollitia animi?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Tenetur sit veniam dolorem velit deleniti, repellendus
+                    perferendis nostrum beatae, rem, illum praesentium totam
+                    perspiciatis. Qui nemo iure culpa nam mollitia animi?</p>
+                <img src="../images/user.png" alt width="400" height="400">
+            </div>
+        </main>
+        <div class="sticky_content">
+            <h2>Get In Touch</h2>
+        </div>
+        <div class="sub_content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                distinctio voluptatibus dolores unde earum. Officia, minima
+                laborum nisi cumque dicta adipisci consequuntur saepe sint!
+                Voluptas rem corporis sint ratione soluta.</p>
+            <img src="../images/user.png" alt width="400" height="400">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                modi, illum, voluptas fuga ab quam nostrum porro quaerat qui
+                quia quis. Natus ipsam perferendis atque porro provident officia
+                vitae magnam!</p>
+            <img src="../images/ganesha.jpg" alt>
+        </div>
+        <footer>
+            <div class="footer_div">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Commodi odio delectus dolor saepe nihil, fugit incidunt
+                    tempora et maiores natus, accusamus aliquid quos doloremque
+                    quasi alias molestiae ex architecto non?</p>
+            </div>
+        </footer>
+    </body>
 </html>

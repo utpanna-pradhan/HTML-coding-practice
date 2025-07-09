@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-     <p style="font-size: 24px; color: red; text-align: center">
-      Q). Use <noscript> to show a message.
-    </p>
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <p style="font-size: 24px; color: red; text-align: center">
+            Q). Use &lt;noscript&gt; to show a message.
+            </p>
+            <p id="demo"></p>
+            <script>
+                document.getElementById("demo").innerHTML="Hello World"
+            </script>
+            <noscript>
+                Sorry, your browser does not support
+                JavaScript!
+            </noscript>
+        </body>
+    </html>
