@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    .card {
+      max-width: 400px;
+      width: 100%;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card h2 {
+      margin: 15px 0;
+    }
+    .card p {
+      padding: 0 15px;
+      color: #555;
+    }
+    .card button {
+      margin: 15px 0 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      background: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+    .card button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://picsum.photos/400/200" alt="Sample Image">
+    <h2>Sunset on the Beach</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel elit at dui condimentum tempus.</p>
+    <button>Read More</button>
+  </div>
+</body>
+</html>
